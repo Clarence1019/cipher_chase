@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INNOVIX // FLAG HUNT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="terminal">
+
+    <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="title">innovix@flag-hunt:~$</span>
+    </div>
+
+    <div class="terminal-body">
+
+        <p>
+            <span class="prompt">root@innovix:~$</span> ./start_challenge
+        </p>
+
+        <p class="success">[✓] Challenge initialized...</p>
+
+        <p>Welcome, Cipher Chase.</p>
+
+        <p>
+            A secret flag has been split across this webpage.
+        </p>
+
+        <p class="warning">
+            Your mission: find every piece.
+        </p>
+
+        <!-- PART 1 : "innovix{C!P" -->
+
+        <div class="commands">
+
+            <p><span class="prompt">$</span> ls</p>
+
+
+            <br>
+
+            <p>
+                <span class="prompt">$</span> find / -name "flag*"
+            </p>
+
+            <p class="dim">
+                Access denied... maybe you're looking in the wrong place.
+            </p>
+
+        </div>
+
+        <button onclick="showHint()" class="hint-btn">
+            [ ? ] REQUEST HINT
+        </button>
+
+        <div id="hintBox" class="hint-box">
+
+            <p class="hint-title">> SYSTEM HINT</p>
+
+            <p>
+                The flag is not stored in one place.
+                <br><br>
+                One piece lives where the page is built,
+                another hides in its appearance,
+                and the final piece waits where the page becomes interactive.
+            </p>
+
+            <p class="hint-level">
+                Difficulty: MEDIUM
+            </p>
+
+        </div>
+
+        <p class="cursor">
+            <span class="prompt">$</span> _
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

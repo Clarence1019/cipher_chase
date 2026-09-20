@@ -1,0 +1,177 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: #050505;
+    color: #00ff66;
+
+    font-family: "Courier New", monospace;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.terminal {
+    width: 900px;
+    max-width: 100%;
+
+    background: #080808;
+
+    border: 1px solid #00ff66;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 0 20px rgba(0, 255, 102, 0.15),
+        inset 0 0 30px rgba(0, 255, 102, 0.03);
+
+    overflow: hidden;
+}
+
+.terminal-header {
+    height: 42px;
+
+    background: #111;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 15px;
+
+    border-bottom: 1px solid #222;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    margin-right: 7px;
+}
+
+.red {
+    background: #ff5555;
+}
+
+.yellow {
+    background: #ffaa00;
+}
+
+.green {
+    background: #00ff66;
+}
+
+.title {
+    margin-left: 10px;
+
+    color: #888;
+
+    font-size: 14px;
+}
+
+.terminal-body {
+    padding: 30px;
+
+    line-height: 1.7;
+
+    min-height: 550px;
+}
+
+.prompt {
+    color: #00ffff;
+}
+
+.success {
+    color: #00ff66;
+}
+
+.warning {
+    color: #ffaa00;
+}
+
+.commands {
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border-left: 2px solid #00ff66;
+
+    background: #0c0c0c;
+}
+
+.commands p {
+    margin: 4px 0;
+}
+
+.dim {
+    color: #666;
+}
+
+/*
+    Some secrets are hidden
+    where appearance is controlled.
+*/
+
+/* PART 2 : "HeR_ChaS" */
+
+
+.hint-btn {
+    margin-top: 30px;
+
+    padding: 12px 20px;
+
+    background: transparent;
+
+    border: 1px solid #00ff66;
+
+    color: #00ff66;
+
+    font-family: "Courier New", monospace;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.hint-btn:hover {
+    background: #00ff66;
+
+    color: #000;
+
+    box-shadow: 0 0 15px rgba(0, 255, 102, 0.5);
+}
+
+.hint-box {
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    border: 1px dashed #ffaa00;
+
+    color: #ffaa00;
+
+    background: rgba(255, 170, 0, 0.03);
+}
+
+.hint-title {
+    color: #00ffff;
+
+    font-weight: bold;
+}
+
+.hint-level {
+    color: #777;
+
+    font-size: 12px;
+}
