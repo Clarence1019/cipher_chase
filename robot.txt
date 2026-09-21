@@ -1,0 +1,20 @@
+
+User-agent: *
+
+# Public paths
+Allow: /
+
+# Restricted areas
+Disallow: /private/
+Disallow: /backup/
+Disallow: /admin/
+Disallow: /sitemap-hidden.xml
+
+# Nothing interesting below...
+# or is there?
+
+# flag:
+# innovix{C!PHeR_ChaSe_WEb3B5}
+
+# End of instructions.
+

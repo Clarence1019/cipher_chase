@@ -5,43 +5,48 @@
 
 body {
     margin: 0;
+
     min-height: 100vh;
 
-    background: #050505;
+    background: #020403;
+
     color: #00ff66;
 
     font-family: "Courier New", monospace;
 
     display: flex;
-    justify-content: center;
+
     align-items: center;
+
+    justify-content: center;
 
     padding: 20px;
 }
 
 .terminal {
     width: 900px;
+
     max-width: 100%;
 
-    background: #080808;
+    background: #050805;
 
     border: 1px solid #00ff66;
 
     border-radius: 8px;
 
     box-shadow:
-        0 0 20px rgba(0, 255, 102, 0.15),
-        inset 0 0 30px rgba(0, 255, 102, 0.03);
+        0 0 30px rgba(0, 255, 102, 0.15);
 
     overflow: hidden;
 }
 
-.terminal-header {
-    height: 42px;
+.terminal-bar {
+    height: 45px;
 
     background: #111;
 
     display: flex;
+
     align-items: center;
 
     padding: 0 15px;
@@ -49,7 +54,7 @@ body {
     border-bottom: 1px solid #222;
 }
 
-.dot {
+.circle {
     width: 12px;
     height: 12px;
 
@@ -70,64 +75,54 @@ body {
     background: #00ff66;
 }
 
-.title {
+.terminal-name {
     margin-left: 10px;
 
-    color: #888;
+    color: #777;
 
     font-size: 14px;
 }
 
-.terminal-body {
-    padding: 30px;
+.terminal-content {
+    padding: 35px;
+
+    min-height: 600px;
 
     line-height: 1.7;
-
-    min-height: 550px;
 }
 
-.prompt {
+.command {
+    color: #ffffff;
+}
+
+.cyan {
     color: #00ffff;
 }
 
-.success {
+.green {
     color: #00ff66;
 }
 
-.warning {
+.yellow {
     color: #ffaa00;
 }
 
-.commands {
-    margin-top: 25px;
+.output {
+    color: #777;
 
-    padding: 15px;
-
-    border-left: 2px solid #00ff66;
-
-    background: #0c0c0c;
+    padding-left: 20px;
 }
 
-.commands p {
-    margin: 4px 0;
+.error {
+    color: #ff5555;
+
+    padding-left: 20px;
 }
 
-.dim {
-    color: #666;
-}
+.hint-button {
+    margin-top: 20px;
 
-/*
-    Some secrets are hidden
-    where appearance is controlled.
-*/
-
-/* PART 2 : "HeR_ChaS" */
-
-
-.hint-btn {
-    margin-top: 30px;
-
-    padding: 12px 20px;
+    padding: 12px 22px;
 
     background: transparent;
 
@@ -139,29 +134,30 @@ body {
 
     cursor: pointer;
 
-    transition: 0.2s;
+    transition: 0.25s;
 }
 
-.hint-btn:hover {
+.hint-button:hover {
     background: #00ff66;
 
     color: #000;
 
-    box-shadow: 0 0 15px rgba(0, 255, 102, 0.5);
+    box-shadow:
+        0 0 20px rgba(0, 255, 102, 0.4);
 }
 
 .hint-box {
     display: none;
 
-    margin-top: 20px;
+    margin-top: 25px;
 
     padding: 20px;
 
     border: 1px dashed #ffaa00;
 
-    color: #ffaa00;
+    background: rgba(255, 170, 0, 0.04);
 
-    background: rgba(255, 170, 0, 0.03);
+    color: #ffaa00;
 }
 
 .hint-title {
@@ -170,8 +166,24 @@ body {
     font-weight: bold;
 }
 
-.hint-level {
-    color: #777;
+.hint-small {
+    color: #666;
 
     font-size: 12px;
 }
+
+/*
+    -----------------------------------------
+    DEBUG INFORMATION
+    -----------------------------------------
+
+    Developers sometimes leave clues behind.
+
+    But not every clue is useful.
+
+    Check the files.
+    Check the headers.
+    Check what search engines are told.
+
+    -----------------------------------------
+*/

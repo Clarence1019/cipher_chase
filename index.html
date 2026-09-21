@@ -1,10 +1,13 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INNOVIX // FLAG HUNT</title>
+
+    <title>INNOVIX // CYBER HUNT</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,77 +15,127 @@
 
 <div class="terminal">
 
-    <div class="terminal-header">
-        <span class="dot red"></span>
-        <span class="dot yellow"></span>
-        <span class="dot green"></span>
-        <span class="title">innovix@flag-hunt:~$</span>
+    <div class="terminal-bar">
+        <span class="circle red"></span>
+        <span class="circle yellow"></span>
+        <span class="circle green"></span>
+
+        <span class="terminal-name">
+            innovix@cipher-chase:~$
+        </span>
     </div>
 
-    <div class="terminal-body">
+    <main class="terminal-content">
 
-        <p>
-            <span class="prompt">root@innovix:~$</span> ./start_challenge
-        </p>
+        <div class="command">
+            <span class="cyan">root@innovix</span>:~$ ./challenge
+        </div>
 
-        <p class="success">[✓] Challenge initialized...</p>
+        <br>
 
-        <p>Welcome, Cipher Chase.</p>
+        <div class="green">
+            When humans enter a website, machines read something else first.
+        </div>
+        <div>
+            Welcome, Cipher Chase.
+        </div>
 
-        <p>
-            A secret flag has been split across this webpage.
-        </p>
+        <br>
 
-        <p class="warning">
-            Your mission: find every piece.
-        </p>
+        <div class="yellow">
+            A secret is hidden somewhere inside this website.
+        </div>
 
-        <!-- PART 1 : "innovix{C!P" -->
+        <div class="yellow">
+            Find it if you can.
+        </div>
 
-        <div class="commands">
+        <br>
 
-            <p><span class="prompt">$</span> ls</p>
+        <div class="command">
+            <span class="cyan">$</span> ls -la
+        </div>
 
+        <div class="output">
+            .
+        </div>
+
+        <div class="output">
+            ..
+        </div>
+
+        <div class="output">
+            index.html
+        </div>
+
+        <div class="output">
+            style.css
+        </div>
+
+        <div class="output">
+            script.js
+        </div>
+
+        <br>
+
+        <div class="command">
+            <span class="cyan">$</span> locate flag
+        </div>
+
+        <div class="error">
+            flag: command not found
+        </div>
+
+        <br>
+
+        <div class="command">
+            <span class="cyan">$</span> whoami
+        </div>
+
+        <div class="output">
+            curious_hunter
+        </div>
+
+        <br>
+
+        <button onclick="showHint()" class="hint-button">
+            [ REQUEST HINT ]
+        </button>
+
+        <div id="hint" class="hint-box">
+
+            <div class="hint-title">
+                [ SYSTEM HINT ]
+            </div>
 
             <br>
 
-            <p>
-                <span class="prompt">$</span> find / -name "flag*"
-            </p>
+            <div>
+                Not everything on a website is meant for visitors.
+            </div>
 
-            <p class="dim">
-                Access denied... maybe you're looking in the wrong place.
-            </p>
+            <br>
 
-        </div>
+            <div>
+                Some instructions are written for machines,
+                not humans.
+            </div>
 
-        <button onclick="showHint()" class="hint-btn">
-            [ ? ] REQUEST HINT
-        </button>
+            <br>
 
-        <div id="hintBox" class="hint-box">
-
-            <p class="hint-title">> SYSTEM HINT</p>
-
-            <p>
-                The flag is not stored in one place.
-                <br><br>
-                One piece lives where the page is built,
-                another hides in its appearance,
-                and the final piece waits where the page becomes interactive.
-            </p>
-
-            <p class="hint-level">
-                Difficulty: MEDIUM
-            </p>
+            <div class="hint-small">
+                Difficulty: HARD
+            </div>
 
         </div>
 
-        <p class="cursor">
-            <span class="prompt">$</span> _
-        </p>
+        <br><br>
 
-    </div>
+        <div class="command">
+            <span class="cyan">$</span> _
+        </div>
+
+    </main>
 
 </div>
 
@@ -90,3 +143,4 @@
 
 </body>
 </html>
+

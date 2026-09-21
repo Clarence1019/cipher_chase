@@ -1,32 +1,51 @@
 
+const hint = document.getElementById("hint");
+
 function showHint() {
 
-    const hintBox = document.getElementById("hintBox");
+    if (hint.style.display === "block") {
 
-    if (hintBox.style.display === "block") {
-
-        hintBox.style.display = "none";
+        hint.style.display = "none";
 
     } else {
 
-        hintBox.style.display = "block";
+        hint.style.display = "block";
 
         console.log(
-            "[HINT] The final piece is closer to the code that makes this page react."
+            "%c[HINT]%c Machines are sometimes given their own instructions.",
+            "color:#00ff66;font-weight:bold;",
+            "color:white;"
+        );
+
+        console.log(
+            "%c[DEBUG]%c Nothing interesting here... probably.",
+            "color:#ffaa00;",
+            "color:#777;"
         );
     }
 }
 
 
-// Interactive layer
+// Fake configuration
 
-const systemLog = {
-    status: "online",
-    module: "interactive-layer"
+const config = {
+    environment: "production",
+    debug: false,
+    version: "3.5.7"
 };
 
 
-// PART 3 : "e_WEb3B5}"
+// Decoy
 
-console.log("[DEBUG] Interactive module loaded.");
+const oldFlag =
+    "innovix{NOT_THE_REAL_FLAG}";
+
+
+// Another decoy
+
+const backup =
+    "innovix{KEEP_LOOKING}";
+
+
+console.log("[SYSTEM] Interactive module loaded.");
 
